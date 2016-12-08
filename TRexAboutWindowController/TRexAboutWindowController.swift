@@ -62,7 +62,7 @@ open class TRexAboutWindowController : NSWindowController {
         if self.appVersion.characters.count <= 0 {
             let version = valueFromInfoDict("CFBundleVersion")
             let shortVersion = valueFromInfoDict("CFBundleShortVersionString")
-            self.appVersion = "Version \(shortVersion) (Build \(version))"
+            self.appVersion = String(format: NSLocalizedString("Version %@ (Build %@)", comment: "Version %@ (Build %@), displayed in the about window"), shortVersion, version)
             versionLabel.stringValue = self.appVersion
         }
         
@@ -104,8 +104,8 @@ open class TRexAboutWindowController : NSWindowController {
         }
         
         self.textField.textStorage!.setAttributedString(self.appCopyright)
-        self.creditsButton.title = "Credits"
-        self.EULAButton.title = "EULA"
+        self.creditsButton.title = NSLocalizedString("Credits", comment: "Caption of the 'Acknowledgments' button in the about window")
+        self.EULAButton.title = NSLocalizedString("EULA", comment: "Caption of the 'License Agreement' button in the about window")
     }
     
     @IBAction func visitWebsite(_ sender: AnyObject) {

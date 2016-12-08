@@ -33,7 +33,7 @@
                             <constraint firstAttribute="height" constant="42" id="eO9-ag-w29"/>
                         </constraints>
                         <textFieldCell key="cell" lineBreakMode="truncatingTail" sendsActionOnEndEditing="YES" title="Label" id="Hng-6J-dgO">
-                            <font key="font" metaFont="systemLight" size="32"/>
+                            <font key="font" metaFont="systemLight" size="28"/>
                             <color key="textColor" name="controlTextColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
@@ -141,7 +141,7 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="4"/>
             </connections>
-            <point key="canvasLocation" x="244.5" y="199"/>
+            <point key="canvasLocation" x="289" y="151"/>
         </window>
     </objects>
     <resources>

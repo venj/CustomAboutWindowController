@@ -11,6 +11,7 @@ import Cocoa
 open class TRexAboutWindowController : NSWindowController {
     open var appName : String = ""
     open var appVersion : String = ""
+    open var appVersionExtended : String = ""
     open var appCopyright : NSAttributedString
     open var appCredits : NSAttributedString?
     open var appEULA : NSAttributedString?
@@ -27,6 +28,7 @@ open class TRexAboutWindowController : NSWindowController {
     @IBOutlet var EULAButton: NSButton!
     @IBOutlet var creditsButton: NSButton!
     @IBOutlet var versionLabel: NSTextField!
+    @IBOutlet weak var extendedVersionLabel: NSTextField!
     
     override init(window: NSWindow?) {
         appCopyright = NSAttributedString()
@@ -59,6 +61,8 @@ open class TRexAboutWindowController : NSWindowController {
             appVersion = String(format: NSLocalizedString("Version %@ (Build %@)", comment: "Version %@ (Build %@), displayed in the about window"), shortVersion, version)
             versionLabel.stringValue = appVersion
         }
+
+        extendedVersionLabel.stringValue = appVersionExtended
         
         if appCopyright.string.characters.count <= 0 {
             if floor(NSAppKitVersionNumber) <= Double(NSAppKitVersionNumber10_9) {

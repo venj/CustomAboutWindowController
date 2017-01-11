@@ -29,6 +29,7 @@ class AppDelegate: NSObject, NSApplicationDelegate {
     @IBAction func showAboutWindow(_ sender:AnyObject) {
         self.aboutWindowController.appURL = URL(string:"https://github.com/T-Rex-Editor/")!
         self.aboutWindowController.appName = "TRex-Editor"
+        self.aboutWindowController.appVersionExtended = "Standalone"
         let font:NSFont? = NSFont(name: "HelveticaNeue", size: 11.0)
         let color:NSColor? = NSColor.tertiaryLabelColor
         let attribs:[String:AnyObject] = [NSForegroundColorAttributeName:color!,

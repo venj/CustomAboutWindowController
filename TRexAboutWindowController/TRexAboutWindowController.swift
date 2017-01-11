@@ -12,6 +12,7 @@ open class TRexAboutWindowController : NSWindowController {
     open var appName : String = ""
     open var appVersion : String = ""
     open var appVersionExtended : String = ""
+    open var appVersionExtendedColor : NSColor = NSColor.lightGray
     open var appCopyright : NSAttributedString
     open var appCredits : NSAttributedString?
     open var appEULA : NSAttributedString?
@@ -63,6 +64,7 @@ open class TRexAboutWindowController : NSWindowController {
         }
 
         extendedVersionLabel.stringValue = appVersionExtended
+        extendedVersionLabel.textColor = appVersionExtendedColor
         
         if appCopyright.string.characters.count <= 0 {
             if floor(NSAppKitVersionNumber) <= Double(NSAppKitVersionNumber10_9) {

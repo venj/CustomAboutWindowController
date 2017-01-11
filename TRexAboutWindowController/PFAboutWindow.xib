@@ -21,11 +21,11 @@
         <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
         <customObject id="-3" userLabel="Application" customClass="NSObject"/>
         <window allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" hasShadow="NO" oneShot="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="1">
-            <windowStyleMask key="styleMask" titled="YES" closable="YES" texturedBackground="YES" unifiedTitleAndToolbar="YES"/>
-            <rect key="contentRect" x="196" y="240" width="509" height="198"/>
+            <windowStyleMask key="styleMask" titled="YES" closable="YES" unifiedTitleAndToolbar="YES" fullSizeContentView="YES"/>
+            <rect key="contentRect" x="196" y="240" width="509" height="220"/>
             <rect key="screenRect" x="0.0" y="0.0" width="1280" height="777"/>
             <view key="contentView" id="2">
-                <rect key="frame" x="0.0" y="0.0" width="509" height="198"/>
+                <rect key="frame" x="0.0" y="0.0" width="509" height="220"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="EGl-r9-3F1">
@@ -119,7 +119,7 @@
                         <rect key="frame" x="214" y="135" width="37" height="22"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Label" id="rKJ-uI-thQ">
                             <font key="font" metaFont="systemLight" size="13"/>
-                            <color key="textColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
+                            <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                             <color key="backgroundColor" name="scrollBarColor" catalog="System" colorSpace="catalog"/>
                         </textFieldCell>
                     </textField>
@@ -134,7 +134,7 @@
                     <constraint firstItem="g3a-Su-h5L" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="169" id="Dx9-rG-wQq"/>
                     <constraint firstAttribute="bottom" secondItem="jVa-hc-yOo" secondAttribute="bottom" constant="14" id="NK0-Hm-eey"/>
                     <constraint firstAttribute="trailing" secondItem="EGl-r9-3F1" secondAttribute="trailing" constant="27" id="RPs-4l-c4B"/>
-                    <constraint firstItem="EGl-r9-3F1" firstAttribute="top" secondItem="2" secondAttribute="top" id="aPH-j0-XNe"/>
+                    <constraint firstItem="EGl-r9-3F1" firstAttribute="top" secondItem="2" secondAttribute="top" constant="22" id="aPH-j0-XNe"/>
                     <constraint firstItem="U77-wg-poj" firstAttribute="leading" secondItem="vfk-bf-9S1" secondAttribute="trailing" constant="18" id="aad-9Q-KCu"/>
                     <constraint firstAttribute="bottom" secondItem="g3a-Su-h5L" secondAttribute="bottom" constant="14" id="cTd-d7-Xxb"/>
                     <constraint firstItem="EGl-r9-3F1" firstAttribute="leading" secondItem="vfk-bf-9S1" secondAttribute="trailing" constant="21" id="dIX-Ih-EJz"/>
@@ -143,7 +143,7 @@
                     <constraint firstItem="zPN-eo-Xhd" firstAttribute="top" secondItem="ipZ-Gg-r2C" secondAttribute="bottom" constant="8" id="enh-QJ-CCw"/>
                     <constraint firstItem="ipZ-Gg-r2C" firstAttribute="top" secondItem="EGl-r9-3F1" secondAttribute="bottom" constant="-1" id="fei-aN-WNO"/>
                     <constraint firstItem="g3a-Su-h5L" firstAttribute="top" secondItem="U77-wg-poj" secondAttribute="bottom" constant="15" id="g6e-i1-L6C"/>
-                    <constraint firstItem="vfk-bf-9S1" firstAttribute="top" secondItem="2" secondAttribute="top" constant="10" id="miV-8q-slz"/>
+                    <constraint firstItem="vfk-bf-9S1" firstAttribute="top" secondItem="2" secondAttribute="top" constant="32" id="miV-8q-slz"/>
                     <constraint firstItem="Ut2-Zg-cxe" firstAttribute="height" secondItem="ipZ-Gg-r2C" secondAttribute="height" id="uLo-wl-uH9"/>
                     <constraint firstItem="vfk-bf-9S1" firstAttribute="leading" secondItem="2" secondAttribute="leading" constant="5" id="wfH-M2-NUT"/>
                 </constraints>
@@ -151,7 +151,7 @@
             <connections>
                 <outlet property="delegate" destination="-2" id="4"/>
             </connections>
-            <point key="canvasLocation" x="289" y="151"/>
+            <point key="canvasLocation" x="288.5" y="140"/>
         </window>
     </objects>
     <resources>
